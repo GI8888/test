@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data ke Google Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .login-container, .data-form {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Input Data ke Google Sheet</h2>
+        
+        <!-- Login Form -->
+        <div id="login-container" class="login-container active">
+            <form id="login-form">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+        
+        <!-- Data Input Form -->
+        <div id="data-form" class="data-form">
+            <button id="logout-btn" class="btn btn-secondary mb-3">Logout</button>
+            <form id="input-form">
+                <div class="mb-3">
+                    <label for="checked-by" class="form-label">Checked By</label>
+                    <input type="text" class="form-control" id="checked-by" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="check-date" class="form-label">Tanggal</label>
+                    <input type="date" class="form-control" id="check-date" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="staff-name" class="form-label">Nama Staff</label>
+                    <input type="text" class="form-control" id="staff-name" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="sheet-name" class="form-label">Sheet</label>
+                    <select class="form-select" id="sheet-name" required>
+                        <option value="">Pilih Sheet</option>
+                        <option value="Sheet1">Sheet1</option>
+                        <option value="Sheet2">Sheet2</option>
+                        <option value="Sheet3">Sheet3</option>
+                        <option value="Sheet4">Sheet4</option>
+                        <option value="Sheet5">Sheet5</option>
+                        <option value="Sheet6">Sheet6</option>
+                        <option value="Sheet7">Sheet7</option>
+                        <option value="Sheet8">Sheet8</option>
+                        <option value="Sheet9">Sheet9</option>
+                        <option value="Sheet10">Sheet10</option>
+                        <option value="Sheet11">Sheet11</option>
+                        <option value="Sheet12">Sheet12</option>
+                        <option value="Sheet13">Sheet13</option>
+                        <option value="Sheet14">Sheet14</option>
+                        <option value="Sheet15">Sheet15</option>
+                        <option value="Sheet16">Sheet16</option>
+                        <option value="Sheet17">Sheet17</option>
+                        <option value="Sheet18">Sheet18</option>
+                        <option value="Sheet19">Sheet19</option>
+                        <option value="Sheet20">Sheet20</option>
+                        <option value="Sheet21">Sheet21</option>
+                        <option value="Sheet22">Sheet22</option>
+                        <option value="Sheet23">Sheet23</option>
+                        <option value="Sheet24">Sheet24</option>
+                        <option value="Sheet25">Sheet25</option>
+                        <option value="Sheet26">Sheet26</option>
+                        <option value="Sheet27">Sheet27</option>
+                        <option value="Sheet28">Sheet28</option>
+                        <option value="Sheet29">Sheet29</option>
+                        <option value="Sheet30">Sheet30</option>
+                        <option value="Sheet31">Sheet31</option>
+                        <option value="Sheet32">Sheet32</option>
+                        <option value="Sheet33">Sheet33</option>
+                        <option value="Sheet34">Sheet34</option>
+                        <option value="Sheet35">Sheet35</option>
+                        <option value="Sheet36">Sheet36</option>
+                        <option value="Sheet37">Sheet37</option>
+                        <option value="Sheet38">Sheet38</option>
+                        <option value="Sheet39">Sheet39</option>
+                        <option value="Sheet40">Sheet40</option>
+                        <option value="Sheet41">Sheet41</option>
+                        <option value="Sheet42">Sheet42</option>
+                        <option value="Sheet43">Sheet43</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="ss-link" class="form-label">Link Screenshot</label>
+                    <input type="url" class="form-control" id="ss-link" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="chat-id" class="form-label">Chat ID</label>
+                    <input type="text" class="form-control" id="chat-id" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
+            <div id="status-message" class="mt-3 alert" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
