@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // In a real implementation, you would use something like this:
         /*
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyMG0LUqkWCABgcIlPLIsriHyrCsNhRMDzsnnS-cikmTUrDdgZR7ev1dpX84_Sy277v/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtYkNcMilVQVrHh_o4N5gvrsyq2nSrp6YH8rhFhLH4faxsZsOzx3oQqdB0KFIxj_d6/exec';
         
         fetch(scriptURL, {
             method: 'POST',
